@@ -6,3 +6,5 @@ dist/
 Thumbs.db
 *.log
 *.tmp.*
+INTERVIEW_*.md
+notes/

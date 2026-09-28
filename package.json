@@ -1,8 +1,9 @@
 {
-  "name": "new-folder",
+  "name": "quantum-weave-lead-intelligence",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "AI-Powered Lead & Customer Intelligence System for Quantum Weave",
+  "main": "server/index.js",
+  "author": "Chirag N Sundar",
   "scripts": {
     "dev": "concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"node server/index.js\" \"vite --config client/vite.config.js client\"",
     "dev:server": "node server/index.js",

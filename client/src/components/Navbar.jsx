@@ -152,9 +152,9 @@ export default function Navbar({
                   {u.id === currentUser?.id && <CheckCircle2 size={16} color="#6366f1" />}
                 </div>
               ))}
-              <div style={{ borderTop: '1px solid var(--border-subtle)', marginTop: '0.4rem', paddingTop: '0.4rem', paddingLeft: '0.75rem', paddingRight: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.7rem', color: 'var(--accent-emerald)' }}>
-                <ShieldCheck size={13} />
-                <span>Candidate Demo Session Active</span>
+              <div style={{ borderTop: '1px solid var(--border-subtle)', marginTop: '0.4rem', paddingTop: '0.4rem', paddingLeft: '0.75rem', paddingRight: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                <ShieldCheck size={13} color="var(--accent-emerald)" />
+                <span>Internal Team Session</span>
               </div>
             </div>
           )}

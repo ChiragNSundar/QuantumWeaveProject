@@ -36,7 +36,7 @@ A full-stack, enterprise-grade **AI-Powered Lead & Customer Intelligence Platfor
 | **8** | **Reliability & Security** | **Completed.** Deduplication by email/phone, zero-key resilient offline fallback, human-in-the-loop review actions, sanitization, secret isolation. | Handled across [`server/`](file:///d:/GitHub/New%20folder/server/) |
 | **9** | **Testing** | **Completed.** 18 automated unit and integration tests verifying all 6 sub-systems with 100% pass rate (`npm test`). | [`tests/runTests.js`](file:///d:/GitHub/New%20folder/tests/runTests.js) |
 | **10** | **Deployment** | **Completed.** Single-command local dev (`npm run dev`), single-port production server (`npm start`), zero-config cloud deployment ready (Render, Railway, AWS). | [`package.json`](file:///d:/GitHub/New%20folder/package.json), [`server/index.js`](file:///d:/GitHub/New%20folder/server/index.js) |
-| **11** | **Documentation** | **Completed.** Architecture diagrams, system specifications, data flows, and API reference. | [`README.md`](file:///d:/GitHub/New%20folder/README.md), [`ARCHITECTURE.md`](file:///d:/GitHub/New%20folder/ARCHITECTURE.md) |
+| **11** | **Technical Documentation** | **Completed.** Concise architecture documentation with ASCII diagram, component deep-dives, security handling, and setup instructions. | [`README.md`](file:///d:/GitHub/New%20folder/README.md) |
 
 ---
 
@@ -48,6 +48,49 @@ A full-stack, enterprise-grade **AI-Powered Lead & Customer Intelligence Platfor
 - **AI & RAG:** Dual-mode architecture supporting Google Gemini API (`gemini-1.5-flash`) / OpenAI GPT-4o-mini with deterministic semantic NLP fallback. Semantic document chunker and TF-IDF vector space with normalized cosine similarity.
 - **Automations:** Event-driven pipeline orchestrator with webhook dispatch simulation (Slack / Email / Webhook).
 - **External API:** Meta WhatsApp Cloud API compliant webhook endpoints (`GET` challenge handshake + `POST` inbound message stream).
+
+---
+
+## Architecture Diagram
+
+```
++----------------------------------------------------------------------------------------------------+
+|                                    INBOUND INGESTION CHANNELS                                      |
++----------------------------------------------------------------------------------------------------+
+       |                                                                            |
+       v                                                                            v
+[ Public Web Portal ]                                                    [ WhatsApp Cloud API / ]
+[ Inbound Enquiry Form ]                                                 [ Webhook Simulator   ]
+       |                                                                            |
+       +------------------------------------+---------------------------------------+
+                                            |
+                                            v
++----------------------------------------------------------------------------------------------------+
+|                                  EXPRESS 5 REST API SERVER (Node.js)                               |
++----------------------------------------------------------------------------------------------------+
+|  • /api/leads        : CRUD, Stage Changes, Follow-up Approvals, Duplicate Check                   |
+|  • /api/knowledge    : Document Corpus Ingestion & Semantic Vector RAG Search                      |
+|  • /api/agent        : Autonomous Multi-Turn Agent with Structured Tool Calling Trace              |
+|  • /api/automations  : 7-Step Inbound Event Pipeline & Real-Time Execution Logs                    |
+|  • /api/webhooks     : Meta WhatsApp Cloud API Handshake & Conversational Processor                |
+|  • /api/analytics    : Pipeline Funnel, Conversion Velocity & Source Heatmaps                      |
++----------------------------------------------------------------------------------------------------+
+                                            |
+                                            v
++----------------------------------------------------------------------------------------------------+
+|                                   REACT CLIENT APPLICATION (Vite)                                  |
++----------------------------------------------------------------------------------------------------+
+|  • Public Portal       : High-impact service showcase, ROI tiers, interactive enquiry form         |
+|  • Lead Intelligence   : Executive KPI cards, real-time lead queue, search and filter matrix       |
+|  • Pipeline Board      : 6-Stage Kanban (New -> Contacted -> Qualified -> Proposal -> Won / Lost)  |
+|  • Lead Dossier Modal  : AI summary, intent, priority, next action, editable follow-up composer    |
+|  • Knowledge Hub       : RAG vector document manager with chunk viewer and grounded Q&A            |
+|  • Agent Studio        : Autonomous agent chat with live tool-calling execution trace              |
+|  • Automation Hub      : Interactive flowchart with step-by-step transaction logs                  |
+|  • WhatsApp Lab        : Smartphone mockup simulator + Meta Cloud API specs                        |
+|  • Analytics View      : Pipeline conversion funnel and service breakdowns                         |
++----------------------------------------------------------------------------------------------------+
+```
 
 ---
 
