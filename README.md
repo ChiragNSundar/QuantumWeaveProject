@@ -35,7 +35,7 @@ A full-stack, enterprise-grade **AI-Powered Lead & Customer Intelligence Platfor
 | **7** | **WhatsApp / External Integration** | **Completed.** Meta WhatsApp Cloud API verification handshake + inbound webhook parser + interactive smartphone simulator lab. | [`server/services/webhookService.js`](file:///d:/GitHub/New%20folder/server/services/webhookService.js), [`client/src/components/WhatsAppSimulator.jsx`](file:///d:/GitHub/New%20folder/client/src/components/WhatsAppSimulator.jsx) |
 | **8** | **Reliability & Security** | **Completed.** Deduplication by email/phone, zero-key resilient offline fallback, human-in-the-loop review actions, sanitization, secret isolation. | Handled across [`server/`](file:///d:/GitHub/New%20folder/server/) |
 | **9** | **Testing** | **Completed.** 18 automated unit and integration tests verifying all 6 sub-systems with 100% pass rate (`npm test`). | [`tests/runTests.js`](file:///d:/GitHub/New%20folder/tests/runTests.js) |
-| **10** | **Deployment** | **Completed.** Single-command startup (`npm run dev`), production bundling, multi-stage `Dockerfile`, and `docker-compose.yml`. | [`Dockerfile`](file:///d:/GitHub/New%20folder/Dockerfile), [`docker-compose.yml`](file:///d:/GitHub/New%20folder/docker-compose.yml) |
+| **10** | **Deployment** | **Completed.** Single-command local dev (`npm run dev`), single-port production server (`npm start`), zero-config cloud deployment ready (Render, Railway, AWS). | [`package.json`](file:///d:/GitHub/New%20folder/package.json), [`server/index.js`](file:///d:/GitHub/New%20folder/server/index.js) |
 | **11** | **Documentation** | **Completed.** Architecture diagrams, system specifications, data flows, and API reference. | [`README.md`](file:///d:/GitHub/New%20folder/README.md), [`ARCHITECTURE.md`](file:///d:/GitHub/New%20folder/ARCHITECTURE.md) |
 
 ---
@@ -92,13 +92,7 @@ npm run dev
 npm run build
 npm start
 ```
-- Full application runs on: `http://localhost:5000`
-
-#### Option C: Docker Container
-```bash
-docker-compose up --build
-```
-- Runs containerized on port `5000` with volume persistence.
+- Full application runs unified on: `http://localhost:5000` (ready for 1-click cloud host deployment like Render, Railway, or AWS Elastic Beanstalk).
 
 ---
 

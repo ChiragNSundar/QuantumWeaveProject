@@ -1,13 +1,40 @@
 {
   "leads": [
     {
+      "id": "lead-mulawvt2-9830",
+      "name": "Website Visitor (WhatsApp Widget)",
+      "email": "",
+      "phone": "+1 (555) 309-8124",
+      "company": "Website Visitor (WhatsApp Widget)'s Organization",
+      "source": "whatsapp",
+      "stage": "New",
+      "service": "WhatsApp Inbound Inquiry",
+      "budget": "Undisclosed",
+      "message": "What are your pricing tiers?",
+      "aiIntelligence": {
+        "summary": "Website Visitor (WhatsApp Widget)'s Organization is seeking autonomous ai employee & support agent to address operational bottlenecks. Their enquiry demonstrates pricing & scope inquiry with a designated priority of Medium.",
+        "problem": "What are your pricing tiers?",
+        "intent": "Pricing & Scope Inquiry",
+        "priority": "Medium",
+        "priorityReason": "Standard inquiry awaiting requirement scoping and technical discovery.",
+        "suggestedService": "Autonomous AI Employee & Support Agent",
+        "recommendedNextAction": "Share Quantum Weave service brochure and Starter Sprint pricing tier.",
+        "suggestedFollowUp": "Hi Website,\n\nThank you for reaching out to Quantum Weave on behalf of Website Visitor (WhatsApp Widget)'s Organization. We reviewed your enquiry regarding what are your pricing tiers?\n\nOur team specializes in deploying enterprise-grade Autonomous AI Employee & Support Agent with rapid 2-3 week turnarounds and complete API integrations. We have helped similar businesses solve this exact operational challenge.\n\nCould we schedule a brief 20-minute discovery call this week to review your current setup and share a live demo of what we can build for you?\n\nYou can pick a time that works best here: https://cal.com/quantumweave/discovery\n\nBest regards,\nSolutions Engineering Team\nQuantum Weave | BrandMint AI",
+        "isReviewed": false,
+        "analyzedAt": "2026-09-28T13:46:40.264Z",
+        "engine": "Semantic Heuristic Engine (Offline Resilient)"
+      },
+      "createdAt": "2026-09-28T13:46:40.262Z",
+      "updatedAt": "2026-09-28T13:46:40.264Z"
+    },
+    {
       "id": "lead-101",
       "name": "Marcus Vance",
       "email": "m.vance@apexlogistics.io",
       "phone": "+1 (555) 234-8901",
       "company": "Apex Logistics Global",
       "source": "website",
-      "stage": "Qualified",
+      "stage": "Contacted",
       "service": "AI Employee / Chatbot",
       "budget": "$8,000 - $15,000",
       "message": "We receive over 400 customer shipment status inquiries daily via WhatsApp and web form. Our support agents are overwhelmed answering where is my shipment and pricing quotes. We need an intelligent WhatsApp AI employee that can query our tracking API, answer customer questions, and escalate difficult claims.",
@@ -16,7 +43,7 @@
         "problem": "Support staff overwhelmed by repetitive shipment status inquiries and quote calculations across WhatsApp and Web.",
         "intent": "High Commercial Intent (Ready for Pilot)",
         "priority": "Urgent",
-        "priorityReason": "High enquiry volume (400/day), clear existing budget, explicit API integration requirement, direct business ROI.",
+        "priorityReason": "Escalated by AI: Client flagged enterprise readiness and immediate deployment need.",
         "suggestedService": "Autonomous AI Employee & WhatsApp Cloud Integration",
         "recommendedNextAction": "Conduct 30-min Technical Discovery call to review Shipment Tracking API endpoints and confirm WhatsApp Business Account access.",
         "suggestedFollowUp": "Hi Marcus,\n\nThank you for reaching out to Quantum Weave. Automating 400+ daily shipment tracking and quote enquiries via WhatsApp is right in our sweet spot. We build autonomous AI employees with custom API tool-calling that integrate directly with your tracking system and escalate edge cases seamlessly.\n\nCould we schedule a 20-minute discovery call this Thursday at 2:00 PM EST to map out your API schema and share a live demo?\n\nBest regards,\nChirag N Sundar\nQuantum Weave AI Solutions",
@@ -24,7 +51,7 @@
         "analyzedAt": "2026-09-27T19:31:09.093Z"
       },
       "createdAt": "2026-09-26T13:31:09.093Z",
-      "updatedAt": "2026-09-28T01:31:09.093Z"
+      "updatedAt": "2026-09-28T13:41:02.445Z"
     },
     {
       "id": "lead-102",
@@ -133,6 +160,40 @@
   ],
   "activities": [
     {
+      "id": "act-mulawvt6-ek1h",
+      "leadId": "lead-mulawvt2-9830",
+      "type": "ai_analyzed",
+      "title": "AI Intelligence Completed",
+      "description": "Priority: Medium | Intent: Pricing & Scope Inquiry | Suggested: Autonomous AI Employee & Support Agent",
+      "actor": "ai_agent",
+      "metadata": {
+        "priority": "Medium",
+        "intent": "Pricing & Scope Inquiry",
+        "suggestedService": "Autonomous AI Employee & Support Agent"
+      },
+      "createdAt": "2026-09-28T13:46:40.266Z"
+    },
+    {
+      "id": "act-mulawvt3-hxir",
+      "leadId": "lead-mulawvt2-9830",
+      "type": "lead_created",
+      "title": "New Lead Created (WHATSAPP)",
+      "description": "Enquiry received: \"What are your pricing tiers?...\"",
+      "actor": "system",
+      "metadata": {},
+      "createdAt": "2026-09-28T13:46:40.263Z"
+    },
+    {
+      "id": "act-mulapn5b-l47n",
+      "leadId": "lead-101",
+      "type": "stage_changed",
+      "title": "Lead Escalated to Human Solutions Architect",
+      "description": "Reason: Client flagged enterprise readiness and immediate deployment need.",
+      "actor": "ai_agent",
+      "metadata": {},
+      "createdAt": "2026-09-28T13:41:02.447Z"
+    },
+    {
       "id": "act-001",
       "leadId": "lead-101",
       "type": "lead_created",
@@ -235,6 +296,52 @@
     }
   ],
   "automationLogs": [
+    {
+      "id": "auto-mulawvt2",
+      "workflow": "inbound_lead_processing",
+      "leadId": "lead-mulawvt2-9830",
+      "trigger": "Inbound WHATSAPP Enquiry",
+      "steps": [
+        {
+          "step": "Lead Captured & Validated",
+          "status": "success",
+          "timestamp": "2026-09-28T13:46:40.262Z",
+          "detail": "Channel: whatsapp. Contact: Website Visitor (WhatsApp Widget) (+1 (555) 309-8124)"
+        },
+        {
+          "step": "Lead Created in CRM Database",
+          "status": "success",
+          "timestamp": "2026-09-28T13:46:40.264Z",
+          "detail": "Assigned ID: lead-mulawvt2-9830 with initial stage 'New'"
+        },
+        {
+          "step": "AI Lead Intelligence Analysis",
+          "status": "success",
+          "timestamp": "2026-09-28T13:46:40.267Z",
+          "detail": "Assigned Priority: Medium | Intent: Pricing & Scope Inquiry (Engine: Semantic Heuristic Engine (Offline Resilient))"
+        },
+        {
+          "step": "Knowledge Base Context Retrieved (RAG)",
+          "status": "success",
+          "timestamp": "2026-09-28T13:46:40.267Z",
+          "detail": "Retrieved 2 relevant business documentation chunks (Top ref: Pricing Models, Engagement Tiers & Implementation Timelines)"
+        },
+        {
+          "step": "Personalized Follow-Up Drafted",
+          "status": "success",
+          "timestamp": "2026-09-28T13:46:40.267Z",
+          "detail": "Generated custom follow-up draft pending human review or 1-click dispatch."
+        },
+        {
+          "step": "Team Notification / Webhook Dispatched",
+          "status": "success",
+          "timestamp": "2026-09-28T13:46:40.267Z",
+          "detail": "Alert sent to team notification channel (#sales-alerts / leads@quantumweave.ai). Status: simulated"
+        }
+      ],
+      "status": "success",
+      "createdAt": "2026-09-28T13:46:40.267Z"
+    },
     {
       "id": "auto-mulan6hj",
       "workflow": "inbound_lead_processing",
