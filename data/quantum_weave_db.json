@@ -297,6 +297,98 @@
   ],
   "automationLogs": [
     {
+      "id": "auto-mumekghd",
+      "workflow": "inbound_lead_processing",
+      "leadId": "lead-mumekghd-9lpw",
+      "trigger": "Inbound WHATSAPP Enquiry",
+      "steps": [
+        {
+          "step": "Lead Captured & Validated",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.169Z",
+          "detail": "Channel: whatsapp. Contact: WhatsApp Test User (+1 (555) 998-0011)"
+        },
+        {
+          "step": "Lead Created in CRM Database",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.170Z",
+          "detail": "Assigned ID: lead-mumekghd-9lpw with initial stage 'New'"
+        },
+        {
+          "step": "AI Lead Intelligence Analysis",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.172Z",
+          "detail": "Assigned Priority: Medium | Intent: Pricing & Scope Inquiry (Engine: Semantic Heuristic Engine (Offline Resilient))"
+        },
+        {
+          "step": "Knowledge Base Context Retrieved (RAG)",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.172Z",
+          "detail": "Retrieved 1 relevant business documentation chunks (Top ref: Pricing Models, Engagement Tiers & Implementation Timelines)"
+        },
+        {
+          "step": "Personalized Follow-Up Drafted",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.172Z",
+          "detail": "Generated custom follow-up draft pending human review or 1-click dispatch."
+        },
+        {
+          "step": "Team Notification / Webhook Dispatched",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.172Z",
+          "detail": "Alert sent to team notification channel (#sales-alerts / leads@quantumweave.ai). Status: simulated"
+        }
+      ],
+      "status": "success",
+      "createdAt": "2026-09-29T08:16:45.172Z"
+    },
+    {
+      "id": "auto-mumekgh7",
+      "workflow": "inbound_lead_processing",
+      "leadId": "lead-mumekgh7-35js",
+      "trigger": "Inbound WEBSITE Enquiry",
+      "steps": [
+        {
+          "step": "Lead Captured & Validated",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.163Z",
+          "detail": "Channel: website. Contact: Alexander Stone (a.stone@stonefintech.io)"
+        },
+        {
+          "step": "Lead Created in CRM Database",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.164Z",
+          "detail": "Assigned ID: lead-mumekgh7-35js with initial stage 'New'"
+        },
+        {
+          "step": "AI Lead Intelligence Analysis",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.166Z",
+          "detail": "Assigned Priority: Urgent | Intent: Enterprise Evaluation (Engine: Semantic Heuristic Engine (Offline Resilient))"
+        },
+        {
+          "step": "Knowledge Base Context Retrieved (RAG)",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.166Z",
+          "detail": "Retrieved 2 relevant business documentation chunks (Top ref: Business Workflow Automation & Webhook Integration)"
+        },
+        {
+          "step": "Personalized Follow-Up Drafted",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.166Z",
+          "detail": "Generated custom follow-up draft pending human review or 1-click dispatch."
+        },
+        {
+          "step": "Team Notification / Webhook Dispatched",
+          "status": "success",
+          "timestamp": "2026-09-29T08:16:45.166Z",
+          "detail": "Alert sent to team notification channel (#sales-alerts / leads@quantumweave.ai). Status: simulated"
+        }
+      ],
+      "status": "success",
+      "createdAt": "2026-09-29T08:16:45.166Z"
+    },
+    {
       "id": "auto-mumecmil",
       "workflow": "inbound_lead_processing",
       "leadId": "lead-mumecmil-2o36",
