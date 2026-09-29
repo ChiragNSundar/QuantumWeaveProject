@@ -118,8 +118,8 @@ A full-stack, enterprise-grade **AI-Powered Lead & Customer Intelligence Platfor
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/quantum-weave-intelligence.git
-cd quantum-weave-intelligence
+git clone https://github.com/ChiragNSundar/QuantumWeaveProject.git
+cd QuantumWeaveProject
 
 # Install dependencies
 npm install
