@@ -72,8 +72,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Start listening if not imported in tests
-if (process.env.NODE_ENV !== 'test') {
+// Start listening if not imported in tests and not running as a serverless function (Vercel)
+if (process.env.NODE_ENV !== 'test' && !process.env.VERCEL) {
   app.listen(config.PORT, () => {
     console.log(`=======================================================`);
     console.log(`🚀 Quantum Weave Intelligence API Server running on port ${config.PORT}`);
