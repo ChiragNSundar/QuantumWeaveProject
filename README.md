@@ -4,6 +4,20 @@
 **Role:** AI Full-Stack Developer  
 **Company:** Quantum Weave (BrandMint AI Pvt. Ltd.)  
 **Test Window:** 24-Hour Practical Skill Test  
+**Live Deployed Application:** [https://quantum-weave-project.vercel.app/](https://quantum-weave-project.vercel.app/)  
+**GitHub Repository:** [https://github.com/ChiragNSundar/QuantumWeaveProject](https://github.com/ChiragNSundar/QuantumWeaveProject)  
+
+---
+
+## 🌐 Live Cloud Deployment & Direct Endpoints
+
+The complete prototype is deployed live on **Vercel** with full frontend React SPA and backend Express API serverless functions:
+- **Live Application Portal:** [https://quantum-weave-project.vercel.app/](https://quantum-weave-project.vercel.app/)
+- **Live API Health Check:** [https://quantum-weave-project.vercel.app/api/health](https://quantum-weave-project.vercel.app/api/health)
+- **Live Leads REST API:** [https://quantum-weave-project.vercel.app/api/leads](https://quantum-weave-project.vercel.app/api/leads)
+- **Live Knowledge Documents (RAG):** [https://quantum-weave-project.vercel.app/api/knowledge/documents](https://quantum-weave-project.vercel.app/api/knowledge/documents)
+- **Live Agent Tools Inspector:** [https://quantum-weave-project.vercel.app/api/agent/tools](https://quantum-weave-project.vercel.app/api/agent/tools)
+- **Live WhatsApp Webhook Challenge:** [https://quantum-weave-project.vercel.app/api/webhooks/whatsapp?hub.mode=subscribe&hub.verify_token=quantum_weave_secret_verify_2026&hub.challenge=VERIFIED](https://quantum-weave-project.vercel.app/api/webhooks/whatsapp?hub.mode=subscribe&hub.verify_token=quantum_weave_secret_verify_2026&hub.challenge=VERIFIED)
 
 ---
 
@@ -35,7 +49,7 @@ A full-stack, enterprise-grade **AI-Powered Lead & Customer Intelligence Platfor
 | **7** | **WhatsApp / External Integration** | **Completed.** Meta WhatsApp Cloud API verification handshake + inbound webhook parser + interactive smartphone simulator lab. | [`server/services/webhookService.js`](file:///d:/GitHub/QuantumWeaveProject/server/services/webhookService.js), [`client/src/components/WhatsAppSimulator.jsx`](file:///d:/GitHub/QuantumWeaveProject/client/src/components/WhatsAppSimulator.jsx) |
 | **8** | **Reliability & Security** | **Completed.** Deduplication by email/phone, zero-key resilient offline fallback, human-in-the-loop review actions, sanitization, secret isolation. | Handled across [`server/`](file:///d:/GitHub/QuantumWeaveProject/server/) |
 | **9** | **Testing** | **Completed.** 18 automated unit and integration tests verifying all 6 sub-systems with 100% pass rate (`npm test`). | [`tests/runTests.js`](file:///d:/GitHub/QuantumWeaveProject/tests/runTests.js) |
-| **10** | **Deployment** | **Completed.** Single-command local dev (`npm run dev`), single-port production server (`npm start`), zero-config cloud deployment ready (Render, Railway, AWS). | [`package.json`](file:///d:/GitHub/QuantumWeaveProject/package.json), [`server/index.js`](file:///d:/GitHub/QuantumWeaveProject/server/index.js) |
+| **10** | **Deployment** | **Completed.** Live on Vercel ([`quantum-weave-project.vercel.app`](https://quantum-weave-project.vercel.app/)) via serverless functions + Vite SPA. Also supports single-port production server (`npm start`) and local dev (`npm run dev`). | [`vercel.json`](file:///d:/GitHub/QuantumWeaveProject/vercel.json), [`api/index.js`](file:///d:/GitHub/QuantumWeaveProject/api/index.js), [`server/index.js`](file:///d:/GitHub/QuantumWeaveProject/server/index.js) |
 | **11** | **Technical Documentation** | **Completed.** Concise architecture documentation with ASCII diagram, component deep-dives, security handling, and setup instructions. | [`README.md`](file:///d:/GitHub/QuantumWeaveProject/README.md) |
 
 ---
