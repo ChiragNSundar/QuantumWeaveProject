@@ -1,11 +1,15 @@
 const path = require('path');
 require('dotenv').config();
 
+const isVercel = Boolean(process.env.VERCEL);
+const defaultDataDir = isVercel ? '/tmp' : path.join(__dirname, '..', 'data');
+const defaultDbFile = isVercel ? path.join('/tmp', 'quantum_weave_db.json') : path.join(__dirname, '..', 'data', 'quantum_weave_db.json');
+
 module.exports = {
   PORT: process.env.PORT || 5000,
   NODE_ENV: process.env.NODE_ENV || 'development',
-  DATA_DIR: path.join(__dirname, '..', 'data'),
-  DB_FILE: path.join(__dirname, '..', 'data', 'quantum_weave_db.json'),
+  DATA_DIR: defaultDataDir,
+  DB_FILE: defaultDbFile,
   
   // AI Configuration
   GEMINI_API_KEY: process.env.GEMINI_API_KEY || '',

@@ -39,8 +39,16 @@ class Database {
         if (!this.data.automationLogs) this.data.automationLogs = [];
         if (!this.data.users) this.data.users = [];
       } else {
-        // Seed default data
-        this.data = {
+        const repoDbPath = path.join(__dirname, '..', '..', 'data', 'quantum_weave_db.json');
+        let initialData = null;
+        if (fs.existsSync(repoDbPath)) {
+          try {
+            initialData = JSON.parse(fs.readFileSync(repoDbPath, 'utf-8'));
+          } catch (e) {
+            initialData = null;
+          }
+        }
+        this.data = initialData || {
           leads: seedLeads,
           activities: seedActivities,
           knowledgeDocuments: seedKnowledgeDocuments,
