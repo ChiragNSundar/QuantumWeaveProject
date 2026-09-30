@@ -6,7 +6,5 @@ dist/
 Thumbs.db
 *.log
 *.tmp.*
-INTERVIEW_*
-*.pdf
 scripts/
 notes/
